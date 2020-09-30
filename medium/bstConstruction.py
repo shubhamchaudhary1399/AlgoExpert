@@ -18,6 +18,7 @@ class BST:
             else:
                 if currentNode.right is None:
                     currentNode.right = BST(value)
+                    break
                 else:
                     currentNode = currentNode.right
         return self
